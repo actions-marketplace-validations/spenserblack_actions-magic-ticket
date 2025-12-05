@@ -22,10 +22,16 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Post Comment
+      - uses: actions/checkout@v4
+      - name: Post Even Number Comment
         uses: ./
         with:
-          regex: "^$" # any
+          regex: "[24680]$"
           message: |
-            Thanks for creating #{{ number }}, {{ actor }}!
+            Cool, #{{ number }} is an even number!
+      - name: Post Odd Number Comment
+        uses: ./
+        with:
+          regex: "[13579]$"
+          message: |
+            Cool, #{{ number }} is an odd number!
