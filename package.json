@@ -30,7 +30,7 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@octokit/webhooks-definitions": "^3.67.3",
-    "@types/node": "^20.4.0",
+    "@types/node": "^24.10.1",
     "@types/nunjucks": "^3.2.5",
     "@vercel/ncc": "^0.38.1",
     "jest": "^29.7.0",
